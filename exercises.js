@@ -174,7 +174,30 @@ console.log(copyValuesArray);
 Declare a variable named `topQuote` and assign it to a String value of your favorite one line quote.
 Write a function that will iterate through the string value and return the longest word in that quote. Console.log your result.
 */
-var topQuote = "The river runs deep"
+var topQuote = "Shut your fucking mouth, i got a window in my house"; //excuse my language, but its a quote i recently came upon
+function longestWord(str){
+  var str2Array = str.split(" ");
+  var currentWord = "";
+  for(var i = 0; i<str2Array.length -1; i++){
+    if(str2Array[i].length > currentWord.length){
+      currentWord = str2Array[i];
+    }
+  }
+  return currentWord;
+}
+console.log(longestWord(topQuote));
+
+// function shortWord(str){
+//   var str2Array = str.split(" ");
+//   var currentWord = "";
+//   for(var i = 0; i>str2Array.length; i++){
+//     if(str2Array[i].length < currentWord.length){
+//     currentWord = str2Array[i];
+//     }
+//   }
+//   return currentWord;
+// }
+// console.log(shortWord(topQuote));
 
 
 /* 12) Puppet Master
