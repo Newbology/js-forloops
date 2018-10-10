@@ -187,11 +187,13 @@ function longestWord(str){
 }
 console.log(longestWord(topQuote));
 
+
+
 // function shortWord(str){
 //   var str2Array = str.split(" ");
 //   var currentWord = "";
-//   for(var i = 0; i>str2Array.length; i++){
-//     if(str2Array[i].length < currentWord.length){
+//   for(var i = 0; i<str2Array.length -1; i++){
+//     if(str2Array[i].length <= currentWord.length){
 //     currentWord = str2Array[i];
 //     }
 //   }
@@ -209,7 +211,19 @@ Write a function named `generateArrayOfStrings` which takes a single argument `s
 
 */
 
+var miscStorage = [ [], 'Carrots', 9, 'Beets', {}, {name: "Todd B."}, 'Mush' ]
 
+function generateArrayOfStrings(storage){
+  var stringArray = [];
+  for(var i = 0; i<storage.length; i++){
+    if(typeof storage[i] === typeof ""){
+    stringArray.push(storage[i]);
+    }
+  }
+  return stringArray;
+}
+
+console.log(generateArrayOfStrings(miscStorage));
 
 /* 13) All Grown Up 
 Write a function that will capitalize the first letter in each word in the phrase below. The function will console.log the message: "I've Lived A Life That's Full. I've Traveled Each And Every Highway. But More, Much More Than This. I Did It My Way."  
