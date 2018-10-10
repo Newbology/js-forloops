@@ -244,9 +244,13 @@ var myWay = "i've lived a life that's full, i've traveled each and every highway
 
 function capitalize(str){
   var word = str.split(" ");
+  console.log(word);
   for(var i = 0; i<word.length; i++){
+    console.log(word[i]);
     var letter = word[i].split("");
+    console.log(letter);
     letter[0] = letter[0].toUpperCase();
+    console.log(letter);
     word[i] = letter.join('');
   }
   return word.join(" ");
