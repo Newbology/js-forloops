@@ -9,7 +9,7 @@ Write a for-loop that will iterate through 20 numbers (starting at 1 and ending 
 "Now serving 20."
 */
 for(var i=0; i<21; i++){
-  console.log(i)
+  console.log("now servering " + i);
 }
 
 /* 2) Pop Charts
