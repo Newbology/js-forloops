@@ -114,8 +114,14 @@ down
 nope
 turn
 */
-
-
+var oopsArray = [ 'turn' , , 'down' , , 'for' , , 'what' ]
+for(i=0; i<oopsArray.length; i++){
+  console.log(oopsArray[i]);
+  if(i%2===1){
+    oopsArray[i] = "nope";
+  }
+}
+console.log(oopsArray);
 /* 9) Siesta Time
 Declare a variable named `napSchedule` and assign its value to the following array: `[false, false, true, false, true, true]`
 
