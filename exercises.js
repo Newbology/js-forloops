@@ -101,7 +101,14 @@ Note that every odd index value in `oopsArray` is currently `undefined`. Using a
 
 [ 'turn' , 'nope' , 'down' , 'nope' , 'for' , 'nope' , 'what' ]
 */
-
+var oopsArray = [ 'turn' , , 'down' , , 'for' , , 'what' ]
+for(i=0; i<oopsArray.length; i++){
+  console.log(oopsArray[i]);
+  if(i%2===1){
+    oopsArray[i] = "nope";
+  }
+}
+console.log(oopsArray);
 
 /* 8) Is It There Oops
 Using a for-loop, iterate through the Array stored at `oopsArray` backwards. Console.log your result. It should look like this:
@@ -114,14 +121,7 @@ down
 nope
 turn
 */
-var oopsArray = [ 'turn' , , 'down' , , 'for' , , 'what' ]
-for(i=0; i<oopsArray.length; i++){
-  console.log(oopsArray[i]);
-  if(i%2===1){
-    oopsArray[i] = "nope";
-  }
-}
-console.log(oopsArray);
+
 /* 9) Siesta Time
 Declare a variable named `napSchedule` and assign its value to the following array: `[false, false, true, false, true, true]`
 
