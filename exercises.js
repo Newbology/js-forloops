@@ -275,7 +275,7 @@ console.log(capitalize(myWay));
 // console.log(capitalize(myWay));
 
 
-
+ 
 
 /* 14) Sightseeing
 Write a function that will loop through the multi-dimensional array and console.log the city and landmark on separate lines.
