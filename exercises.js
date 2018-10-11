@@ -244,13 +244,9 @@ var myWay = "i've lived a life that's full, i've traveled each and every highway
 
 function capitalize(str){
   var word = str.split(" ");
-  console.log(word);
   for(var i = 0; i<word.length; i++){
-    console.log(word[i]);
     var letter = word[i].split("");
-    console.log(letter);
-    letter[0] = letter[0].toUpperCase();
-    console.log(letter);
+    letter[0] = letter[0].toUpperCase(); 
     word[i] = letter.join('');
   }
   return word.join(" ");
@@ -298,23 +294,34 @@ var guide = [["Honolulu", "Waikiki"], ["Tokyo", "Tsukiji Fish Market"], ["Cairo"
 //   }
 //   console.log(guide);
 
-function multiVerse(city, landMark){
-  if( city.length == 1){
-    return arr[0];
-  }else{
-    var result =[];
-    var allmultiVerse = multiVerse(arr.slice(1));
-    for(var i= 0; i<allmultiVerse.length; j++){
-      for(var j = 0; j<city[0].length; j++){
-      result.push(city[0][j] + allmultiVerse[i]);
-      }
-    }
-    return result;
+// function multiVerse(city, landMark){
+//   if( city.length == 1){
+//     return arr[0];
+//   }else{
+//     var result =[];
+//     var allmultiVerse = multiVerse(arr.slice(1));
+//     for(var i= 0; i<allmultiVerse.length; j++){
+//       for(var j = 0; j<city[0].length; j++){
+//       result.push(city[0][j] + allmultiVerse[i]);
+//       }
+//     }
+//     return result;
+//   }
+// }
+// console.log(guide);
+
+
+function doubleSplit(sText, str){
+  var arr = newArray();
+  arr = sText.split(",");
+  for(i=0;i<arr.length;i++){
+    arr2 = newArray();
+    arr2[0] = 'My' + arr2[0];
+    arr[i]=arr2;
   }
+  return arr;
 }
 console.log(guide);
-
-
 
 /* 15) Back to School
 Declare a variable named `currentCohort` and set it's value to be this [array found here](https://gist.github.com/sgnl/e40879b2249e06ca7811).
