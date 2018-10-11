@@ -8,7 +8,7 @@ Write a for-loop that will iterate through 20 numbers (starting at 1 and ending 
 .
 "Now serving 20."
 */
-for(var i=0; i<21; i++){
+for(var i=1; i<21; i++){
   console.log("now servering " + i);
 }
 
@@ -188,6 +188,17 @@ function longestWord(str){
 console.log(longestWord(topQuote));
 
 
+// function goLong(str){
+//   var tempStorage =[];
+//   var strToArr = str.split(" ");
+//   for(var i = 0; i<strToArr.length; i++){
+//     if(strToArr[i].length > tempStorage.length){
+//       tempStorage=strToArr[i];
+//     }
+//     return tempStorage;
+//   }
+// }
+// goLong(topQuote);
 
 // function shortWord(str){
 //   var str2Array = str.split(" ");
@@ -282,6 +293,17 @@ Note, please use two for loops to complete this problem
 
 var guide = [["Honolulu", "Waikiki"], ["Tokyo", "Tsukiji Fish Market"], ["Cairo", "Pyramids"],["Rome", "Colosseum"]];
 
+function sightSeeing(arr){
+  for(var i = 0; i<arr.length; i++){
+    for(var o=0; o<arr[i].length; o++)
+    console.log(arr[i][o]);
+  }
+}
+
+sightSeeing(guide);
+
+
+
 // function multiVerse(city, landMark){
 //   for( var i=0; i<city.length; i++){
 //     if(Array.isArray(arr[i]))
@@ -311,18 +333,27 @@ var guide = [["Honolulu", "Waikiki"], ["Tokyo", "Tsukiji Fish Market"], ["Cairo"
 // console.log(guide);
 
 
-function doubleSplit(sText, str){
-  var arr = newArray();
-  arr = sText.split(",");
-  for(i=0;i<arr.length;i++){
-    arr2 = newArray();
-    arr2[0] = 'My' + arr2[0];
-    arr[i]=arr2;
+// function doubleSplit(sText, str){
+//   var arr = newArray();
+//   arr = sText.split(",");
+//   for(i=0;i<arr.length;i++){
+//     arr2 = newArray();   
+//     arr2[0] = 'My' + arr2[0];
+//     arr[i]=arr2;
+//   }
+//   return arr;
+// }
+// console.log(guide);
+
+var holidays = [["Honolulu", "Waikiki"], ["Tokyo", "Tsukiji Fish Market"], ["Cairo", "Pyramids"],["Rome", "Colosseum"]];
+
+for(var i=0; i<holidays.length; i++){
+  for(var j=0; j<holidays[i].length; j++){
+    console.log(holidays[i][j])
+    console.log(holidays[j][1])
   }
-  return arr;
 }
 console.log(guide);
-
 /* 15) Back to School
 Declare a variable named `currentCohort` and set it's value to be this [array found here](https://gist.github.com/sgnl/e40879b2249e06ca7811).
 Write a function named `graduateAndSetNewClass`, which takes a single argument called `cohort`.
@@ -334,54 +365,54 @@ If the `enrolled` property is set to `true` then change that student's `graduate
 Console.log your result.
 */
 
-// var currentCohort = [
-//   {
-//     name: 'Doug',
-//     graduated: true,
-//     enrolled: true
-//   },
-//   {
-//     name: 'Pat',
-//     graduated: false,
-//     enrolled: false
-//   },
-//   {
-//     name: 'Marsha',
-//     graduated: false,
-//     enrolled: false
-//   },
-//   {
-//     name: 'Moira',
-//     graduated: false,
-//     enrolled: true
-//   },
-//   {
-//     name: 'Ben',
-//     graduated: false,
-//     enrolled: true
-//   },
-//   {
-//     name: 'Nigel the Giraffe',
-//     graduated: false,
-//     enrolled: false
-//   },
-//   {
-//     name: 'Brandon the Shark',
-//     graduated: false,
-//     enrolled: true
-//   }
-// ];
+var currentCohort = [
+  {
+    name: 'Doug',
+    graduated: true,
+    enrolled: true
+  },
+  {
+    name: 'Pat',
+    graduated: false,
+    enrolled: false
+  },
+  {
+    name: 'Marsha',
+    graduated: false,
+    enrolled: false
+  },
+  {
+    name: 'Moira',
+    graduated: false,
+    enrolled: true
+  },
+  {
+    name: 'Ben',
+    graduated: false,
+    enrolled: true
+  },
+  {
+    name: 'Nigel the Giraffe',
+    graduated: false,
+    enrolled: false
+  },
+  {
+    name: 'Brandon the Shark',
+    graduated: false,
+    enrolled: true
+  }
+];
 
 
-// function graduateAndSetNewClass(cohort){
-//   for(var i = 0; i<cohort.length; i++){
-//     if(cohort[i].enrolled === true){
-//       cohort[i].graduated === true;
-//     }else{
-//       cohort[i].graduated = false;
-//   }
-//   return cohort;
-// }
-// }
+function graduateAndSetNewClass(cohort){
+  for(var i = 0; i<cohort.length; i++){
+    if(cohort[i].enrolled === true){
+      cohort[i].graduated === true;
+    }else{
+      cohort[i].graduated = false;
+  }
+  return cohort;
+}
+}
 
-// console.log(graduateAndSetNewClass(currentCohort));
+console.log(graduateAndSetNewClass(currentCohort));
