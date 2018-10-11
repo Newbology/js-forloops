@@ -286,17 +286,17 @@ Note, please use two for loops to complete this problem
 
 var guide = [["Honolulu", "Waikiki"], ["Tokyo", "Tsukiji Fish Market"], ["Cairo", "Pyramids"],["Rome", "Colosseum"]];
 
-function multiVerse(city, landMark){
-  for( var i=0; i<city.length; i++){
-    if(Array.isArray(arr[i]))
-    printArray(arr[i])
-  } 
-  for( var i=0; i<landMark.length; i++){
-    if(Array.isArray(arr[i]))
-    printArray(arr[i])
-   }
-  }
-  console.log(guide);
+// function multiVerse(city, landMark){
+//   for( var i=0; i<city.length; i++){
+//     if(Array.isArray(arr[i]))
+//     printArray(arr[i])
+//   } 
+//   for( var i=0; i<landMark.length; i++){
+//     if(Array.isArray(arr[i]))
+//     printArray(arr[i])
+//    }
+//   }
+//   console.log(guide);
 
 /* 15) Back to School
 Declare a variable named `currentCohort` and set it's value to be this [array found here](https://gist.github.com/sgnl/e40879b2249e06ca7811).
