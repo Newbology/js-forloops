@@ -298,6 +298,24 @@ var guide = [["Honolulu", "Waikiki"], ["Tokyo", "Tsukiji Fish Market"], ["Cairo"
 //   }
 //   console.log(guide);
 
+function multiVerse(city, landMark){
+  if( city.length == 1){
+    return arr[0];
+  }else{
+    var result =[];
+    var allmultiVerse = multiVerse(arr.slice(1));
+    for(var i= 0; i<allmultiVerse.length; j++){
+      for(var j = 0; j<city[0].length; j++){
+      result.push(city[0][j] + allmultiVerse[i]);
+      }
+    }
+    return result;
+  }
+}
+console.log(guide);
+
+
+
 /* 15) Back to School
 Declare a variable named `currentCohort` and set it's value to be this [array found here](https://gist.github.com/sgnl/e40879b2249e06ca7811).
 Write a function named `graduateAndSetNewClass`, which takes a single argument called `cohort`.
